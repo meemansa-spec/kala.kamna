@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kala Kamna - Premium Collection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- SPLASH SCREEN -->
+    <div class="splash-screen" id="splashScreen">
+        <div class="splash-content">
+            <img src="images/logo.png" alt="Logo" class="splash-logo">
+        </div>
+    </div>
+
+    <!-- TOP NAVIGATION BAR -->
+    <nav class="top-nav">
+        <!-- Logo on Left -->
+        <div class="logo-left" id="logoHome">
+            <img src="images/logo.png" alt="Kala Kamna Logo" class="logo-image">
+        </div>
+
+        <!-- Icons on Right -->
+        <div class="nav-icons">
+            <!-- Cart Icon -->
+            <button class="nav-icon-btn" id="cartBtn">
+                <img src="images/cart-icon.svg" alt="Cart">
+                <span class="cart-badge" id="cartBadge">0</span>
+            </button>
+
+            <!-- Account Icon -->
+            <div style="position: relative;">
+                <button class="nav-icon-btn" id="accountBtn">
+                    <img src="images/account-icon.svg" alt="Account">
+                </button>
+                <div class="account-dropdown" id="accountDropdown">
+                    <div class="account-item">Orders</div>
+                    <div class="account-item">Contact Us</div>
+                    <div class="account-item">Terms of Service</div>
+                    <div class="account-item">Privacy Policy</div>
+                    <div class="account-item">FAQ</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CART PANEL -->
+    <div class="cart-panel" id="cartPanel">
+        <div class="cart-header">
+            <h2>Shopping Cart</h2>
+            <button class="close-btn" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="cart-empty">Your cart is empty</div>
+        </div>
+        <div class="cart-total" id="cartTotalSection" style="display: none;">
+            <div class="cart-total-label">Total:</div>
+            <div class="cart-total-amount" id="cartTotal">$0.00</div>
+        </div>
+        <button class="checkout-btn" id="checkoutBtn" style="display: none;">Checkout</button>
+    </div>
+
+    <!-- CATEGORIES PAGE -->
+    <div class="categories-page" id="categoriesPage">
+        <h1 class="page-title">Explore Our Collections</h1>
+        <div class="categories-container">
+            <div class="categories-grid" id="categoriesGrid">
+                <!-- Categories will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- PRODUCTS PAGE -->
+    <div class="products-page hidden" id="productsPage">
+        <div class="products-container">
+            <div class="products-header">
+                <button class="back-btn" id="backBtn">← Back to Categories</button>
+                <h1 class="products-title" id="categoryTitle">Products</h1>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
